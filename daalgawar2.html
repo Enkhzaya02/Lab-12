@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab12</title>
+        <script type="text/javascript">
+        function calculateCharges(tsag){
+
+        var tulbur = 5000;
+
+        if(tsag<=3){
+            tulbur
+            alert("Таны зогсоолийн төлбөр нь: " + tulbur );
+        }
+
+        if(tsag<21){
+            tulbur = ((tsag-3)*1000)+5000; 
+            alert("Таны зогсоолийн төлбөр нь: " + tulbur );
+        } 
+        
+        else{
+            alert("Таны зогсоолийн төлбөр болон цаг хэтэрсэн байна." );
+        }   
+        
+        return tulbur;}
+        
+        var tsag = window.prompt("Зогсоолд зогссон цагаа оруулна уу:");
+        calculateCharges(tsag);
+
+        </script>
+    </head>
+
+    <body></body>
+</html>

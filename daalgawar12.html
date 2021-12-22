@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab12</title>
+    </head>
+
+    <body>
+        <button id="click" type="button">Toss</button>
+        <span id="result"></span>
+
+        <script type="text/javascript">
+          document.getElementById("click").onclick = click;
+      
+          function click() {
+            s = Math.floor(Math.random()*(2)+0);
+            if(s==0){
+              flip("True");
+            }
+            else{
+              flip("False");
+            }
+          }
+
+          function flip(toss){
+            document.getElementById("result").innerHTML = toss;
+          }
+        </script>
+      </body>
+</html>
